@@ -54,7 +54,21 @@ Project consists main layer:
 * service;
 * controller;
 
-### 📖️ Project structure
+### ⚙️ Project Structure
+There are some important packages here
+
+- <b> config package </b> - has classes that describe the configuration of the project as well as the creation of certain bins.
+- <b> controller package </b> - describes units that handle HTTP
+- <b> dao package </b> - describes interfaces and their implementation for CRUD operations on objects.
+- <b> dto package </b> - describes objects that will be received or sent as a response in JSON format.
+- <b> exception package </b> - describes custom exceptions that may occur during program execution.
+- <b> lib package </b> - has the implementation of mail and password validation with the help of annotations.
+- <b> model package </b> - describes entities that will be stored in our database.
+- <b> service package </b> - describes the interfaces and their implementation to fulfill the business logic, the service layers actively use the dao layer, in turn as a layer of controllers will use its services.
+- <b> utility package </b> - describes a class that stores the time date format, as well as a class that saves certain values into our database at application startup.
+- <b> resource package </b> - stores one file in which you need to set your database settings.
+
+### 📖️ ER diagram
 ![structure.jpg](structure.jpg)
 
 ### 🤖 Technologies Used
@@ -69,7 +83,7 @@ Project consists main layer:
 * Hibernate 5.6.14.Final
 * JDBC
 
-### ⚙️ Getting Started
+### 🔥 Getting Started
 To get started with the Taxi Service project, follow these steps:
 1. Clone the repository: git clone https://github.com/khrystyna-dev/cinema-app.git
 2. Install Postman for sending requests
